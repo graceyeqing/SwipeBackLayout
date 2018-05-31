@@ -141,7 +141,7 @@ public class SwipeBackLayout extends FrameLayout {
         int edgeSize = a.getDimensionPixelSize(R.styleable.SwipeBackLayout_edge_size, -1);
         if (edgeSize > 0)
             setEdgeSize(edgeSize);
-        int mode = EDGE_FLAGS[a.getInt(R.styleable.SwipeBackLayout_edge_flag, 0)];
+        int mode = EDGE_FLAGS[a.getInt(50, 0)];
         setEdgeTrackingEnabled(mode);
 
         int shadowLeft = a.getResourceId(R.styleable.SwipeBackLayout_shadow_left,
